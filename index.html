@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroBase Ultra Final</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>🌌 ASTROBASE</h1>
+            <p>Centro Inteligente de Registro Astronómico</p>
+            <p>Tripulación:</p>
+
+            <div class="crew">
+                Constanza Casté <br>
+                Maximiliano Bascuñán
+            </div>
+
+            <a href="#" id="btnMision">Comenzar misión</a>
+        </div>
+    </header>
+
+    <section class="tips">
+        <h2>✨ Sabías que...</h2>
+        <p id="datoCurioso"></p>
+    </section>
+
+    <section class="galeria">
+        <h2>🌠 Maravillas del Cosmos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900">
+                <h3>Nebulosas</h3>
+                <p>Cunas donde nacen nuevas estrellas.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900">
+                <h3>Galaxias</h3>
+                <p>Millones de soles en movimiento.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=900">
+                <h3>Agujeros Negros</h3>
+                <p>La gravedad más intensa conocida.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="registro" id="registro">
+        <h2>🪐 Registrar Observación</h2>
+
+        <form id="formRegistro">
+
+            <input type="text" id="nombre" placeholder="Nombre del objeto">
+
+            <select id="tipo">
+                <option value="">Tipo de objeto</option>
+                <option>Planeta</option>
+                <option>Estrella</option>
+                <option>Galaxia</option>
+                <option>Nebulosa</option>
+                <option>Cometa</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <input type="text" id="otroTipo" placeholder="Especifica el tipo de objeto" style="display:none;">
+
+            <input type="date" id="fecha">
+
+            <input type="text" id="ubicacion" placeholder="Lugar de observación">
+
+            <input type="email" id="email" placeholder="Correo electrónico">
+
+            <button type="submit">Guardar Observación</button>
+
+            <p id="mensaje"></p>
+
+        </form>
+    </section>
+
+    <section class="estadisticas">
+        <h2>📊 Estadísticas</h2>
+        <p>Total observaciones registradas: <span id="total">0</span></p>
+    </section>
+
+    <section class="lista">
+        <h2>📋 Historial Astronómico</h2>
+        <div id="contenedorTarjetas"></div>
+    </section>
+
+    <footer>
+        🌌 AstroBase © 2026 <br>
+        Tripulación Oficial Casté-Bacuñán
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
