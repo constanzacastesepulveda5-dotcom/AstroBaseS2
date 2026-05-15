@@ -1,6 +1,7 @@
 # AstroBaseS2
 Página Web Sumativa 2, Front End.
 
+EN BASE A RÚBRICA ENTREGADA EN CLASES
 Tecnologías utilizadas
 - HTML5
 - CSS3
