@@ -41,7 +41,7 @@ Debe tener validaciones usando JavaScript.
 ---
 
 ## Prompt 4 
-Agrega validaciones usando expresiones regulares para validar correo electrónico, texto y campos vacíos. Debe impedir guardar datos inválidos.
+Haz que el formulario sea inteligente: no dejes que se guarde la información si hay cuadros vacíos, si el nombre es muy corto o si el formato del correo electrónico está mal escrito (que tenga el @ y el punto).
 
 ---
 
@@ -51,21 +51,17 @@ Implementa buenas prácticas de seguridad en JavaScript evitando usar innerHTML 
 ---
 
 ## Prompt 6 
-Implementa manipulación dinámica del DOM para mostrar observaciones registradas en tiempo real usando arreglos y objetos.
+Asegúrate de que la página sea segura y que no se pueda 'hackear' metiendo código malicioso en los cuadros de texto. Para mostrar los datos en las tarjetas, no uses innerHTML; usa mejor comandos como textContent o createElement para que el navegador solo escriba texto y nada más.
 
 ---
 
 ## Prompt 7 
-Organiza los datos usando arreglos de objetos para almacenar observaciones astronómicas.
+Guarda toda la información de los registros usando arreglos y objetos en JavaScript, para que cada observación astronómica sea como una ficha organizada que se pueda manejar fácilmente en el código.
 
 ---
 
 ## Prompt 8 
-Crea funciones reutilizables como:
-- renderizarObservaciones
-- validarFormulario
-- limpiarFormulario
-- agregarObservacion
+Crea funciones que sirvan para varias cosas a la vez, como una para dibujar las tarjetas en la pantalla (renderizar), otra para revisar que el formulario esté bien escrito y otra para limpiar los cuadros de texto después de guardar, así el código no se repite tanto y queda más ordenado
 
 ---
 
@@ -80,11 +76,7 @@ Agrega un botón 'Comenzar misión' que haga scroll suave hacia abajo, mostrando
 ---
 
 ## Prompt 11 
-Agrega efectos visuales modernos:
-- Aparición suave al hacer scroll
-- Glow dorado
-- Hover animados
-- Fondo animado de estrellas
+Agrégale efectos visuales llamativos para que se vea moderna: que las cosas aparezcan suavemente al bajar por la página, que los botones brillen en dorado y cambien cuando les pase el mouse por encima, y que el fondo tenga estrellas que se muevan para que parezca el espacio
 
 ---
 
@@ -98,8 +90,8 @@ Agrega una sección de curiosidades o tips astronómicos tipo:
 Cuando el usuario haga clic en un input, debe aparecer un pequeño mensaje de ayuda cerca del campo con ejemplos de cómo escribir.
 
 Ejemplos:
-- Nombre del objeto → 'Ej: Antares'
-- Ubicación → 'Ej: Maipú, Santiago / Patio / Observatorio'
+- Nombre del objeto : 'Ej: Antares'
+- Ubicación : 'Ej: Maipú, Santiago / Patio / Observatorio'
 
 ---
 
@@ -135,11 +127,4 @@ Mejora la interfaz para que el formulario sea claro, moderno y fácil de usar si
 ---
 
 ## Prompt 20 
-Crear AstroBase Final cumpliendo todos los requisitos de la rúbrica:
-- DOM dinámico
-- Validaciones
-- Seguridad
-- Arreglos y objetos
-- Funciones reutilizables
-- Diseño responsive
-- Uso de IA documentado.
+Ayúdame a terminar la AstroBase revisando que cumpla con todo lo que pide la rúbrica: que los datos se vean en tarjetas automáticamente (DOM dinámico), que el formulario no deje pasar errores (validaciones), que la página sea segura contra ataques (seguridad), que toda la información esté bien organizada (arreglos y objetos) y que se vea bien tanto en el computador como en el celular (diseño responsive).
